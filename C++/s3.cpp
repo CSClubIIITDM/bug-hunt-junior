@@ -1,5 +1,6 @@
 // find the bug in the concept
 
+
 #include<iostream>
 using namespace std;
 
@@ -13,12 +14,13 @@ int foo(int j) {
   return j;
 }
 
-void ineedj(void) {
-  cout << "j is " << j << "\n";
+void ineedj(int j) {
+  cout << "i is " << j << "\n";
 }
 
 main() {
   int j;
   j = foo(i);
-  ineedj();
+  ineedj(i);
 }
+
