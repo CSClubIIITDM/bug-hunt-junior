@@ -1,12 +1,13 @@
 #include<iostream>
+#include<string.h>
 using namespace std;
 
 
-int main(void){
-    string string1 = "Hello";
-    string string2 = "Horld";
+int main(){
+    char *string1 = "Hello";
+    char *string2 = "Horld";
 
-    if (string1 == string2)
+    if (strcmp(string1,string2)==0)
     cout << "Equal";
     else
     cout << "Not Equal";

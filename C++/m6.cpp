@@ -1,10 +1,10 @@
 // the below code doesn't work for some values of s. find the bug
 
 #include<iostream>
-#include<string>
+#include<string.h>
 
 int main(){
-    std :: string s = "Hello World";
+    std :: string s = "HelloWorld";
 
     for(int i=0;i < s.length(); i++){
         s[i] = toupper(s[i]);
@@ -12,5 +12,5 @@ int main(){
 
     std::cout << s << std::endl;
 
-    return 1;
+    return 0;
 }
