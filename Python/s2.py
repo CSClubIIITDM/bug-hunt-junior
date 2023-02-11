@@ -12,7 +12,7 @@ def main():
     numbers = [-1, 4, 6, -9, 1]
     n = len(numbers)
     total = 0
-    result = sum_numbers(numbers, total, n - 1)
+    result = sum_numbers(numbers, total, 0)
     print("The sum of numbers is:", result)
 
 

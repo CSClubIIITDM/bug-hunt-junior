@@ -4,10 +4,10 @@ def sort_numbers(numbers):
     for i in range(len(numbers)):
         for j in range(i + 1, len(numbers)):
             if numbers[i] > numbers[j]:
-                temp = numbers[i]
+                temp = numbers[j]
                 numbers[j] = numbers[i]
                 numbers[i] = temp
-        return numbers
+    return numbers
 
 
 numbers = [7, 5, 2, 4, 3, 9, 1, 8, 6]

@@ -23,7 +23,7 @@ int longestPalSubstr(string str)
 
 	int maxLength = 1;
 
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < n; i++)//not ++i it should be i++
 		table[i][i] = true;
 
 	int start = 0;

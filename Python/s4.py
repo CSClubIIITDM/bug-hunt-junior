@@ -1,9 +1,12 @@
 # Program: Check if an integer is a power of 2
 
 def is_power_of_two(n):
-    if n <= 0:
+    if n%2!=0:
         return False
-    return (n & (n-1)) == 1
+    else:
+        if n==2:
+            return True
+        return is_power_of_two(n//2)
 
 
 num = 69
