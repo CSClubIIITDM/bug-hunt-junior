@@ -12,7 +12,7 @@ public:
 
         while (i < j)
         {
-            if (s[i++] != s[j--])
+            if (s[i++] != s[--j])
                 return false;
         }
         return true;
