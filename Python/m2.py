@@ -4,7 +4,9 @@ def is_prime(num):
     for i in range(2, num):
         if num % i == 0:
             return False
-    return True
+        else:
+            return True
+    
 
 
 def find_prime_factors(num):
@@ -21,3 +23,4 @@ def find_prime_factors(num):
 num = 69
 prime_factors = find_prime_factors(num)
 print("Prime Factors of", num, ":", prime_factors)
+
