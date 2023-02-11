@@ -11,7 +11,7 @@ else:
 print()
 
 answer2 = input("Do you want me to print bugs for all Python files? ;) ([Y]es/[N]o) ")
-if answer2.lower() == "y" or "yes":
+if answer2.lower() ==( "y" or "yes"):
     print("Nice try :P")
 elif answer2.lower() == "n" or "no":
     print("That's the spirit!")
