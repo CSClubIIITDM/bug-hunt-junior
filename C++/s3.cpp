@@ -4,7 +4,7 @@
 using namespace std;
 
 int i = 5;
-int j;
+int j=7;//initialize j(we initialized j as 7)
 
 int foo(int j) {
   for (i=0; i<j; i++){

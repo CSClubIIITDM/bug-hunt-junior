@@ -19,5 +19,5 @@ main() {
   char *myval = initialize();
   cin >> *myval;
   cout << "Variable intialized" << endl;
-  do_something_with(myval);
+   do_something_with(char * myval);
 }

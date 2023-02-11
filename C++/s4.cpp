@@ -8,12 +8,14 @@ using namespace std;
 
 int random(){
     srand(time(0));
-    return rand();
+    int t=rand();
+    return t;
 }
 
 
 int main(void){
     int i=6, j=7;
+
     int val = Random(j-i+1);
 
     cout << val << endl;
