@@ -13,12 +13,12 @@ int foo(int j) {
   return j;
 }
 
-void ineedj(void) {
+void ineedj(int j) {
   cout << "j is " << j << "\n";
 }
 
 main() {
   int j;
   j = foo(i);
-  ineedj();
+  ineedj(j);
 }
