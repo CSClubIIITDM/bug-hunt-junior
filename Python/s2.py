@@ -1,6 +1,5 @@
 # Program: Sum of numbers in a list using recursion
-
-def sum_numbers(numbers, total, i):
+def sum_numbers(numbers, total=0, i=0):
     if i == len(numbers):
         return total
 
@@ -10,9 +9,7 @@ def sum_numbers(numbers, total, i):
 
 def main():
     numbers = [-1, 4, 6, -9, 1]
-    n = len(numbers)
-    total = 0
-    result = sum_numbers(numbers, total, n - 1)
+    result = sum_numbers(numbers)
     print("The sum of numbers is:", result)
 
 
