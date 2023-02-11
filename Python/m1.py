@@ -4,8 +4,9 @@ def merge_sort(arr):
     mid = len(arr) // 2
     left = arr[:mid]
     right = arr[mid:]
-    left = merge_sort(left)
-    right = merge_sort(right)
+    if left[0] != arr[:mid] and right[0] != arr[mid:]:
+        left = merge_sort(left)
+        right = merge_sort(right)
     return merge(left, right)
 
 

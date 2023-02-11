@@ -9,12 +9,13 @@ def is_prime(num):
 
 def find_prime_factors(num):
     prime_factors = []
-    i, stop = 2, num + 1
+    i = 2
+    stop = num + 1
     while i < stop:
         if num % i == 0 and is_prime(i):
             prime_factors.append(i)
             num = num // i
-            i += 1
+        i += 1
     return prime_factors
 
 

@@ -6,7 +6,10 @@ def deposit(balance, amount):
 
 
 def withdraw(balance, amount):
-    balance -= amount
+    if balance - amount < 0:
+        print("You don't have enough money")
+    else:
+        balance -= amount
     return balance
 
 
