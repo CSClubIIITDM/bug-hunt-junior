@@ -2,11 +2,11 @@
 
 #include<iostream>
 using namespace std;
-
+  char string1[80];
 char *initialize() {
-  char string[80];
+
 //   string = "hello"
-  char* ptr = string;
+  char* ptr = &string1[0];
   return ptr;
 }
 
@@ -17,6 +17,7 @@ void do_something_with(char* myval){
 main() {
 	cout << "enter value for myval" << endl;
   char *myval = initialize();
+  cout<<"Address is "<<myval<<endl;
   cin >> *myval;
   cout << "Variable intialized" << endl;
   do_something_with(myval);
