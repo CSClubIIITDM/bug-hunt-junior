@@ -31,7 +31,7 @@ def main():
             if(balance>=amount):
              balance = withdraw(balance, amount)
             else:
-                print("Insufficient balance)
+             print("Insufficient balance")
         elif choice == 3:
             balance = check_balance(balance)
         elif choice == 4:
