@@ -12,7 +12,7 @@ public:
 
         while (i < j)
         {
-            if (s[i++] != s[j--])
+            if (s[i++] != s[--j]) //--j instead of j--
                 return false;
         }
         return true;
@@ -35,10 +35,17 @@ public:
                 if (isPalindrome(s.substr(i, j)))
                 {
                     if (result.size() < j)
-                        result = s.substr(i, j + 1);
+                        result = s.substr(i, j ); //not s.substr(i ,j+1) as the string we checked whether it was palindrome is s.substr(i,j)
                 }
             }
         }
         return result;
     }
 };
+int main()
+{
+    Solution obj;
+    string s="forgeeksskeegfor";
+    cout << obj.longestPalindrome(s);
+    return 0;
+}
