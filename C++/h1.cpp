@@ -40,7 +40,7 @@ int longestPalSubstr(string str)
 		for (int i = 0; i < n - k; ++i) {
 			int j = i + k - 1;
 
-			if (table[i][j] && str[i] == str[j]) {
+			if (table[i+1][j] && str[i] == str[j]) {
 				table[i][j] = true;
 
 				if (k > maxLength) {
