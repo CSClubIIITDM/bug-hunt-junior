@@ -7,7 +7,7 @@ int main(){
     std :: string s = "Hello World";
 
     for(int i=0;i < s.length(); i++){
-        s[i] = toupper(s[i]);
+        s[i] = (char)toupper(s[i]);
     }
 
     std::cout << s << std::endl;

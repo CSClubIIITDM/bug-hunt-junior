@@ -6,15 +6,16 @@
 using namespace std;
 #define Random(n)  random()%n
 
-int random(){
+int random()
+{
     srand(time(0));
     return rand();
 }
 
 
-int main(void){
+int main(void)
+{
     int i=6, j=7;
-    int val = Random(j-i+1);
-
+    int val = Random(j-i+1)%j;
     cout << val << endl;
 }
