@@ -28,7 +28,11 @@ def main():
             balance = deposit(balance, amount)
         elif choice == 2:
             amount = int(input("Enter the amount to withdraw: "))
-            balance = withdraw(balance, amount)
+            if(balance<amount):
+                print("Insufficient balance")
+            else:  
+                balance = withdraw(balance, amount)
+            
         elif choice == 3:
             balance = check_balance(balance)
         elif choice == 4:
