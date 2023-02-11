@@ -3,7 +3,7 @@
 answer1 = input("Are you enjoying Vashisht? ([Y]es/[N]o) ")
 if answer1.lower() == ("y" or "yes"):
     print("That's great! We hope you're having fun hunting for bugs.")
-elif answer1.lower() == "n" or "no":
+elif answer1.lower() == ("n" or "no"):
     print(":( We're sorry to hear that. We hope you'll have fun soon.")
 else:
     print("404 Not Found!")
