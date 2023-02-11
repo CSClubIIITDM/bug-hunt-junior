@@ -3,10 +3,14 @@
 def is_power_of_two(n):
     if n <= 0:
         return False
-    return (n & (n-1)) == 1
+    else:
+        i = 1
+        while i % 2 != 0:
+            if 2 ** i == n:
+                return n
+        return (n&(n-1)) == 1
 
-
-num = 69
+num = 64
 if is_power_of_two(num):
     print(num, "is a power of 2")
 else:
