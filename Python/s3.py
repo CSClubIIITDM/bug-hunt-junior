@@ -7,7 +7,7 @@ def sort_numbers(numbers):
                 temp = numbers[i]
                 numbers[j] = numbers[i]
                 numbers[i] = temp
-        return numbers
+    return numbers
 
 
 numbers = [7, 5, 2, 4, 3, 9, 1, 8, 6]
