@@ -9,7 +9,7 @@ int main(){
     myVec.push_back(2);
     myVec.push_back(3);
 
-    for(int i=0; i < myVec.size(); i++){
+    for(int i=0; i < myVec.size()+1; i++){
         std :: cout << myVec[i] << std :: endl;
     }
     std :: cout << "Element at index 3: "<< myVec.at(3) << std::endl;

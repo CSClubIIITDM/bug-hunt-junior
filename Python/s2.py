@@ -1,15 +1,15 @@
 # Program: Sum of numbers in a list using recursion
 
 def sum_numbers(numbers, total, i):
-    if i == len(numbers):
+    if i == -1:
         return total
 
     total += numbers[i]
-    return sum_numbers(numbers, total, i + 1)
+    return sum_numbers(numbers, total, i - 1)
 
 
 def main():
-    numbers = [-1, 4, 6, -9, 1]
+    numbers = [-1, 5, 6, -9, 1]
     n = len(numbers)
     total = 0
     result = sum_numbers(numbers, total, n - 1)
