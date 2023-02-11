@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include <bits/stdc++.h>
+#include<cstdlib.h>
 using namespace std;
 #define Random(n)  random()%n
 
