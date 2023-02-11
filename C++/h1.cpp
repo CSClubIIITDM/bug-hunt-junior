@@ -1,9 +1,11 @@
 // find the longest pallindrome in the string
 // This program is designed to find the longest palindrome in a given string
-// ie. if the string given is 'djhfacdadcaop' the longest palindrom is 'acdadca' 
+// ie. if the string given is 'djhfacdadcaop' the longest palindrom is 'acdadca'
 // which should be the return value for the function longest pallindrome(char* s).
 
 #include<iostream>
+#include<cstring> //
+
 using namespace std;
 
 void printSubStr(
@@ -19,7 +21,7 @@ int longestPalSubstr(string str)
 
 	bool table[n][n];
 
-	memset(table, 0, sizeof(table));
+	memset(table, 0, sizeof(table)); //
 
 	int maxLength = 1;
 

@@ -4,7 +4,7 @@
 #include<string>
 
 int main(){
-    std :: string s = "Hello World";
+    std :: string s = "a . ,";//doesnt work for special characters.
 
     for(int i=0;i < s.length(); i++){
         s[i] = toupper(s[i]);
