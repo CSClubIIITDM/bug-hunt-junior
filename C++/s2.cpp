@@ -8,11 +8,14 @@ int main(){
     myVec.push_back(1);
     myVec.push_back(2);
     myVec.push_back(3);
+    myVec.push_back(4);
 
     for(int i=0; i < myVec.size(); i++){
         std :: cout << myVec[i] << std :: endl;
     }
+    
     std :: cout << "Element at index 3: "<< myVec.at(3) << std::endl;
+    
     
     return 0;
 }
