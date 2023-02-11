@@ -40,4 +40,4 @@ Solution : [write a brief solution about fixing this bug]
 9. Keep updating your local codes with Bug fixes and whenever you find a bug, report it using the Issue.
 10. At the end of the event you will be asked to raise a Pull Request of your Bug Fixes.
 
-`🤖 Happy Hunting :)`
+`🤖 Happy Hunting :))`

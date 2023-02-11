@@ -1,6 +1,6 @@
 # Program: Merge Sort
 
-def merge_sort(arr):
+def merge_sort(arr): change
     mid = len(arr) // 2
     left = arr[:mid]
     right = arr[mid:]
