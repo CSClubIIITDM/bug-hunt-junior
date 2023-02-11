@@ -41,4 +41,12 @@ public:
         }
         return result;
     }
+    void main()
+    {
+        string s="helle";
+        string ans;
+        ans=longestPalindrome(s);
+        cout << ans;
+
+    }
 };
