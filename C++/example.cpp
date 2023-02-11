@@ -1,4 +1,4 @@
-TYPE : Accidentall
+TYPE : Accidental
 
        for (i = 0; i < numrows; i++) for (j = 0; j < numcols; j++);
 pixels++;
