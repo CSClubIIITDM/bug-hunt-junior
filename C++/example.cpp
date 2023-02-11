@@ -1,17 +1,17 @@
-TYPE: Accidental
+//TYPE: Accidental
 
 for (i=0; i<numrows; i++)
   for (j=0; j<numcols; j++);
     pixels++;
 
-    Commentary: Caused by a stray ";" on line 2. Accidental bugs are often caused by stray characters, etc. While "minor" in their fix, they can be the devil to find!
+    //Commentary: Caused by a stray ";" on line 2. Accidental bugs are often caused by stray characters, etc. While "minor" in their fix, they can be the devil to find!
 
 
 if (foo = 5)
   foo == 7;
   
 
-TYPE: Missing or improper initialization
+//TYPE: Missing or improper initialization
 
 int minval(int *A, int n) {
   int currmin;
@@ -22,7 +22,7 @@ int minval(int *A, int n) {
   return currmin;
 }
 
-Commentary: Since currmin was never initialized, it could easily start out as the minimum value. Some compilers spot no-initialization errors. Note that an improper initialization, while rarer, is even harder to spot than a missing one!
+//Commentary: Since currmin was never initialized, it could easily start out as the minimum value. Some compilers spot no-initialization errors. Note that an improper initialization, while rarer, is even harder to spot than a missing one!
 
 TYPE: Dyslexic
 

@@ -6,7 +6,7 @@ def is_power_of_two(n):
     return (n & (n-1)) == 1
 
 
-num = 69
+num = 8
 if is_power_of_two(num):
     print(num, "is a power of 2")
 else:
